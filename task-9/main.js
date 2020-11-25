@@ -2,25 +2,24 @@ function arrNumber() {
     var arr = ['234', '176', '502', '306', '412'];
     return arr;
 }
-function string (str) { 
-    var b = '';
-    var d = '';
-    for (var a of str) { // набор в строку
-        b += a;
+function string () { 
+    var str = arrNumber().join(''); // преобразование в строку.
+    var arrSpace = '';
+    for (var i = 0; i < str.length; i++) { // перебор строки
+        if (str[i] % 2 == 0 && i != (str.length - 1)) {  // опредиление на четность и последний элемент массива
+            arrSpace += `${str[i]} ` ;
+        } else {
+            arrSpace += str[i];
+        }
     }
-    for (var c of b){ // проверка на четность числа
-        if (c%2===0) {
-            d += `${c} `;
-        }
-        else {
-            d += `${c}`;
-        }
 
-    }
-    d = d.slice(0,-1); // используется, чтобы убрать проблем после последнего значения.
-    d = d.split(' '); 
-    return d;
+    var newArr = arrSpace.split(' ');
+
+    return newArr;
 }
 
-console.log(string(arrNumber()));
+alert(string());
+
+
+
 
