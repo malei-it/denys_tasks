@@ -10,14 +10,13 @@ function meanNumber() {
     return a;
 }
 function replacement() {
-    for (i=0; i<arr.length; i++) {
-        if (arr[i]>num) {
-            arr.splice(i, 1, meanNumber())
-        }
-        else {
-            continue;
+    for (i=0; i<arr.length; i++) { // перебор индекса
+        if (arr[i]>num) { // проверка условия 
+            arr.splice(i, 1, meanNumber()) // подставка среднего значения массива (поскольку подставляется значение в массив,
+            // а у него тип данных object, то меняются данные в значении верхнего уровня, и функция считает среднее значение 
+            //с учетом новых аргументов которые в него передаются)
         }
     }
     return arr;
 }
-console.log(replacement());
+console.log(replacement()); 
