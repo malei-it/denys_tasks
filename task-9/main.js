@@ -1,7 +1,6 @@
-function arrNumber() {
-    var arr = ['234', '176', '502', '306', '412'];
+var arr = ['234', '176', '502', '306', '412'];
     return arr;
-}
+
 function string () { 
     var str = arrNumber().join(''); // преобразование в строку.
     var arrSpace = '';
@@ -11,15 +10,10 @@ function string () {
         } else {
             arrSpace += str[i];
         }
-    }
-
-    var newArr = arrSpace.split(' ');
+        var newArr = arrSpace.split(' ');
 
     return newArr;
-}
+}}
+
 
 alert(string());
-
-
-
-
