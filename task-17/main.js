@@ -10,16 +10,17 @@ function meanNumber() {
     return a;
 }
 function replacement() {
+    var res = meanNumber();
     var b=[];
     for (i=0; i<arr.length; i++) { // перебор индекса
         if (arr[i]>num) { // проверка условия 
-            b[i]=meanNumber(); // добавление в новый массив значений, если менять в исходном масиве, то среднее значение меняется.
+            b[i]=res; // добавление в новый массив значений, если менять в исходном масиве, то среднее значение меняется.
         }
         else {
             b[i]=arr[i];
-
         }
     }
     return b;
+
 }
 console.log(replacement()); 
