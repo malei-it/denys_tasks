@@ -1,0 +1,10 @@
+.list {
+    margin: auto;
+    border: 2px solid red;
+    max-width: 1000px;
+    min-height: 600px;
+}
+.task_name {
+    margin: auto;
+    max-width: 1000px;
+}
