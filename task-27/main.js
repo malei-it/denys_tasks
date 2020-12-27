@@ -1,48 +1,35 @@
 
 (function () {
-    var x = prompt('введите данные');
+    var x = prompt('введите данные'); // получение данных
+    var arrayAll = x.split('*'); //разделение по символу
+    var arrayName = x.split('*',1).join().split(','); // преобразование имен в отедльный массив
+
 
     function insert () {
-        var a = x.split('/', 1); // разделение по патерну
-        a = a.join(''); // преобразование в тсроку
-        return a;
-    }
-        
-
-    function check () {
-        var str = insert(); // получение строки из функции
-        var c=''; // переменая для строки после знака "/"
-        var b=0; // счетсик для сравнение первых символов (имен)
-        for (i of x){ // перебрать все буквы входящей строки
-            if (str[b]==i){ // сравнение имен
-                b++;
+        var arrayPharams = []; // пустой массив для html символом
+            for (i of arrayAll){ 
+                arrayPharams = i; // в конце выполнения функции присвоится последний эелент из      массива тоесь хтмл
             }
-            else {
-                c+=i; // наполнение строки после символа "/"
-            }
-        }
-        return c;
+        return arrayPharams;
     }
-    check();
-    function addHtml () {
-        a=insert(); // получение строки имен
-        a = a.split(','); // преобразование в массив
-        html='';
-        str = check(); // получение строки после знака "/"
-        for (d of a){  // перебор имен из массива
-            for (i of str) { // перебор строки
-                if (i=='$'){ // подстановка переменой вместо элемента 
-                html+=d;
+    function operate (){
+        var html='';
+        var a = insert(); // получения результата функции
+        for (b of arrayName){ // перебор имен из массива
+            for (i of a){ // перебор хтмл символов
+                if (i!=='$'){ // сравнение символа вместо которого подставить имя из списка
+                    html+=i;
                 }
                 else {
-                    html+=i;}}}
+                    html+=`${b}`
+                }
+         }
+        }
         return html;
     }
-
-    var c= addHtml();
-    console.log(c);
-    var container = document.querySelector('.container');
-    container.innerHTML = c;
+    var c= operate(); // присвоения результата работы функции
+    var container = document.querySelector('.container'); // полчуние доступа в документу
+    container.innerHTML = c; // вывод результата на страницу
     
 
         
