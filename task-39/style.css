@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 300px;
+}
+.container__form {
+    margin: 50px 0;
+    max-width: 500px;
+    background: gainsboro;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 15px auto;
+    position: relative;
+
+}
+.input__name {
+    margin: 30px 0 0 0;
+}
+.input__age {
+    margin: 35px 0;
+}
+.btn__send {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 5px;
+}
+.close {
+    margin: 0;
+    right: 0;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.container__opened {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 300px;
+    background: gray;
+}

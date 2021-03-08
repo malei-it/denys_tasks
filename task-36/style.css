@@ -1,0 +1,20 @@
+.container__input{
+    display: flex;
+    justify-content: space-around;
+    background: gainsboro;
+    margin-bottom: 50px;
+}
+.input__text {
+    height: 50px;
+    width: 340px;
+}
+.container__add {
+    min-height: 50px;
+    background: gainsboro;
+    padding: 5px 0;
+    border: 2px solid black;
+}
+.container__inputed {
+    border: 1px solid black;
+    margin: 5px 0;
+}

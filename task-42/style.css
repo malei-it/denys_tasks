@@ -1,0 +1,54 @@
+.container {
+   width: 600px;
+    height: 500px;
+    border: 2px solid red;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.container__move{
+   width: 200px;
+   height: 200px;
+   display: flex;
+   position: absolute;
+   right: 200px;
+   bottom: 150px;
+}
+.content {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+}
+.up {
+   height: 30px;
+   transform: rotate(270deg);
+   position: absolute;
+   top: 0;
+   right: 85px;
+   cursor: pointer;
+}
+.down{
+   height: 30px;
+   transform: rotate(90deg);
+   position: absolute;
+   bottom: 0;
+   right: 85px;
+   cursor: pointer;
+}
+.left{
+   height: 30px;
+   transform: rotate(180deg);
+   position: absolute;
+   left: 0;
+   top: 85px;
+   cursor: pointer;
+}
+.right{
+   height: 30px;
+   position: absolute;
+   right: 0;
+   top: 85px;
+   cursor: pointer;
+}

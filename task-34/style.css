@@ -1,0 +1,13 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__left {
+    font-size: 40px;
+    cursor: pointer;
+}
+.slider__right {
+    font-size: 40px;
+    cursor: pointer;
+}

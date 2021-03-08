@@ -11,3 +11,8 @@ function conversion() {
     //return str;
 }
 console.log(conversion());
+
+
+const user = (a) => ++a;
+
+console.log(typeof(user));

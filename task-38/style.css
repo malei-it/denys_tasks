@@ -1,0 +1,13 @@
+.container__checkbox {
+    display: flex;
+    justify-content: space-around;
+}
+.container__input {
+    display: flex;
+    justify-content: center;
+}
+.input {
+    width: 300px;
+    height: 25px;
+    margin-top: 30px;
+}
