@@ -1,0 +1,39 @@
+
+ .container {
+   border: 1px solid black;
+   height: 500px;
+   display: flex;
+    flex-direction: column;
+ }
+ .content__hide {
+   display: none;
+}
+ .content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    transition: 3s; 
+    margin: auto auto 0 auto;
+    border: 3px solid black;
+ }
+ .link{
+     margin: 20px auto;
+ }
+ 
+ /* стрелка */
+ 
+ .strl {
+    transform: rotate(90deg);
+    height: 40px;
+    margin: -5px auto 0 auto;
+    display: flex;
+    cursor: pointer;
+ }
+ 
+ .strl__hide {
+    transform: rotate(270deg);
+    height: 40px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    cursor: pointer;
+ }
